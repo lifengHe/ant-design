@@ -1,7 +1,9 @@
 import React from 'react';
 import { mount, render } from 'enzyme';
 import moment from 'moment';
-import { RangePicker } from '../';
+import DatePicker from '../';
+
+const { RangePicker } = DatePicker;
 
 describe('RangePicker', () => {
   it('show month panel according to value', () => {

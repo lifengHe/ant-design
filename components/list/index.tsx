@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import * as React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
@@ -45,7 +45,7 @@ export interface ListProps {
   footer?: React.ReactNode;
 }
 
-export default class List extends Component<ListProps> {
+export default class List extends React.Component<ListProps> {
   static Item: typeof Item = Item;
 
   static childContextTypes = {

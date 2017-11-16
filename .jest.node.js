@@ -18,4 +18,7 @@ module.exports = {
   snapshotSerializers: [
     'enzyme-to-json/serializer'
   ],
+  globals: {
+    __TS_CONFIG__: require('./tsconfig.json').compilerOptions,
+  },
 };
